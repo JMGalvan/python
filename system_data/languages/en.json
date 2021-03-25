@@ -1,0 +1,98 @@
+{
+    "COMMON": {
+        "LANGUAGES": {
+            "ES": "Spanish",
+            "EN": "English"
+        },
+        "EXIT": "Finalizing program",
+        "CHOOSE_OPTION": "Selected an option",
+        "CHOOSE_VALID_OPTION": "Selected an valid option",
+        "NAME": "Name",
+        "OTB": "OTB",
+        "WEIGHT": "Weight",
+        "MAX_DAYS": "Max days",
+        "DESCRIPTION": "Description",
+        "STATUS": "Status",
+        "ON_HOLD": "On hold",
+        "IN_TRANSIT": "In transit",
+        "UNASSIGNED": "Unassigned",
+        "DELIVERED": "Delivered",
+        "CANCELED": "Canceled",
+        "ROCKET_TYPE": "Rocket type",
+        "LAUNCH_CODE": "Launch code",
+        "SHIPLOAD": "Shipload",
+        "REQUESTS": "Assigned requests"
+    },
+    "MAIN_MENU": {
+        "TODAY": "Today is day",
+        "TYPES_OF_ROCKETS": "Types of rockets",
+        "STATION_REQUESTS": "Station requests",
+        "RELEASES_AVAILABLE": "Releases available",
+        "ASSIGN": "To assign",
+        "DAYS": "Days",
+        "ADVANCED_INFORMATION": "Ad information",
+        "SETTING": "Setting",
+        "EXIT": "Exit"
+    },
+    "SETTING_MENU": {
+        "CHANGE_LANGUAGE": "Change language",
+        "EXIT": "Exit",
+        "REQUEST_DAYS": "Indicate the days you want to elapse (1 - 365)",
+        "REQUEST_DAYS_ERROR": "Please enter a valid value (1 - 365)"
+    },
+    "TYPES_ROCKETS_MENU": {
+        "NEW_ROCKET": "Introduce new rocket",
+        "SEE_ROCKETS": "See rockets",
+        "EXIT": "Exit",
+        "ROCKET_NAME": "Enter identifier for the rocket (3 - 14 characters)",
+        "ROCKET_NAME_ERROR": "The identifier already exists or does not meet the indicated requirements",
+        "ROCKET_OTB_ERROR": "Enter a valid value (1 - 99999)  (kg)",
+        "ROCKET_OTB": "Enter OTB for the rocket (kg)",
+        "GET_ROCKET_TYPE": "Select a type of rocket"
+    },
+    "STATION_REQUESTS_MENU": {
+        "NEW_REQUEST": "Introduce new request",
+        "SEE_REQUESTS": "See requests",
+        "EXIT": "Exit",
+        "REQUEST_NAME": "Enter identifier for the request (3 - 14 characters)",
+        "REQUEST_DESCRIPTION": "Description (3 - 100 characters)",
+        "REQUEST_DESCRIPTION_ERROR": "The text entered does not meet the indicated requirements",
+        "REQUEST_NAME_ERROR": "The identifier already exists or does not meet the indicated requirements",
+        "REQUEST_WEIGHT_ERROR": "Enter a valid value (0.001 - 99999.999)  (kg)",
+        "REQUEST_WEIGHT": "Enter weight for the request (kg)",
+        "REQUEST_DAYS": "Max days",
+        "REQUEST_DAYS_ERROR": "Enter a valid value (1 - 365)"
+    },
+    "LAUNCHS_MENU": {
+        "NEW_LAUNCH": "Introduce new launch",
+        "SEE_LAUNCHS": "See launchs",
+        "EXIT": "Exit",
+        "REQUEST_DAYS": "Max days to the launch",
+        "REQUEST_DAYS_ERROR": "Enter a valid value (1 - 365)",
+        "UNASSIGNED_REQUEST": "The request could not be assigned",
+        "ASSIGNED_REQUEST": "Launch 'X' has been assigned request 'Y'"
+    },
+    "INFORMATION_HISTORY": {
+        "NEW_ROCKET": "The new type of rocket has been registered",
+        "NEW_REQUEST": "The new request has been registered",
+        "EXPIRED_REQUEST": "Request expired",
+        "REQUEST_IN_TRANSIT": "Request in transit",
+        "SUCCESSFUL_REQUEST": "Request submitted successfully",
+        "NEW_LAUNCH": "New launch has been registered",
+        "CANCEL_LAUNCH": "Launch expired",
+        "LAUNCH_IN_TRANSIT": "Launch in transit",
+        "SUCCESSFUL_LAUNCH": "Launch completed successfully",
+        "REQUEST_ASSIGNED_LAUNCH": "Request assigned to launch",
+        "SHIPLOAD_COMPLETE": "Launch upload completed",
+        "ASSIGNED": "Assignment of requests in launchs"
+    },
+    "ADVANCED_INFORMATION_MENU": {
+        "REQUESTS": "Requests",
+        "LAUNCHS": "Launches",
+        "RECORD": "History",
+        "EXIT": "Exit",
+        "SELECTED_DAY": "Indicate what day you want to get the records from",
+        "SELECTED_DAY_ERROR": "Indicates a valid day",
+        "NO_RECORDS": "There are no records for this day"
+    }
+}

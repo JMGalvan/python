@@ -1,0 +1,32 @@
+{
+    "requests": [
+        {
+            "id": "p10",
+            "weight": 105700,
+            "description": "Ox\u00edgeno",
+            "time_max": 28,
+            "dispatched": false
+        },
+        {
+            "id": "p2c",
+            "weight": 300000,
+            "description": "Comida",
+            "time_max": 28,
+            "dispatched": false
+        },
+        {
+            "id": "p3r",
+            "weight": 800000,
+            "description": "Repuestos",
+            "time_max": 60,
+            "dispatched": false
+        },
+        {
+            "id": "p4r",
+            "weight": 20200,
+            "description": "Repuestos",
+            "time_max": 3,
+            "dispatched": false
+        }
+    ]
+}

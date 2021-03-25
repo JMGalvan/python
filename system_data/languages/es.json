@@ -1,0 +1,98 @@
+{
+    "COMMON": {
+        "LANGUAGES": {
+            "ES": "Español",
+            "EN": "Inglés"
+        },
+        "EXIT": "Finalizando programa",
+        "CHOOSE_OPTION": "Selecciona una opción",
+        "CHOOSE_VALID_OPTION": "Selecciona una opción válida",
+        "NAME": "Nombre",
+        "OTB": "OTB",
+        "WEIGHT": "Peso",
+        "MAX_DAYS": "Días máximos",
+        "DESCRIPTION": "Descripción",
+        "STATUS": "Estado",
+        "ON_HOLD": "En espera",
+        "IN_TRANSIT": "En tránsito",
+        "UNASSIGNED": "Sin asignar",
+        "DELIVERED": "Entregado",
+        "CANCELED": "Cancelado",
+        "ROCKET_TYPE": "Tipo de cohete",
+        "LAUNCH_CODE": "Código de lanzamiento",
+        "SHIPLOAD": "Carga",
+        "REQUESTS": "Peticiones asignadas"
+    },
+    "MAIN_MENU": {
+        "TODAY": "Hoy es día",
+        "TYPES_OF_ROCKETS": "Tipos de cohetes",
+        "STATION_REQUESTS": "Peticiones de la estación",
+        "RELEASES_AVAILABLE": "Lanzamientos disponibles",
+        "ASSIGN": "Asignar",
+        "DAYS": "Días",
+        "ADVANCED_INFORMATION": "Información avanzada",
+        "SETTING": "Configuración",
+        "EXIT": "Salir"
+    },
+    "SETTING_MENU": {
+        "CHANGE_LANGUAGE": "Cambiar idioma",
+        "EXIT": "Salir",
+        "REQUEST_DAYS": "Indique los días que quiere que transcurran (1-365)",
+        "REQUEST_DAYS_ERROR": "Introduzca un valor válido (1 - 365)"
+    },
+    "TYPES_ROCKETS_MENU": {
+        "NEW_ROCKET": "Introducir nuevo cohete",
+        "SEE_ROCKETS": "Ver cohetes",
+        "EXIT": "Salir",
+        "ROCKET_NAME": "Introduzca identificador para el cohete (3 - 14 caracteres)",
+        "ROCKET_NAME_ERROR": "El identificador ya existe o no cumple con los requisitos indicados",
+        "ROCKET_OTB_ERROR": "Introduzca un valor válido (1 - 99999)  (kg)",
+        "ROCKET_OTB": "Introduzca la carga máxima del cohete (kg)",
+        "GET_ROCKET_TYPE": "Seleccione un tipo de cohete"
+    },
+    "STATION_REQUESTS_MENU": {
+        "NEW_REQUEST": "Introducir nueva petición",
+        "SEE_REQUESTS": "Ver peticiones",
+        "EXIT": "Salir",
+        "REQUEST_NAME": "Introduzca identificador para la petición (3 - 14 caracteres)",
+        "REQUEST_DESCRIPTION": "Descripción (3 - 100 characters)",
+        "REQUEST_DESCRIPTION_ERROR": "El texto introducido no cumple con los requisitos indicados",
+        "REQUEST_NAME_ERROR": "El identificador ya existe o no cumple con los requisitos indicados",
+        "REQUEST_WEIGHT_ERROR": "Introduzca un valor válido (0.001 - 99999.999)  (kg)",
+        "REQUEST_WEIGHT": "Introduzca la carga máxima de la petición (kg)",
+        "REQUEST_DAYS": "Días máximos",
+        "REQUEST_DAYS_ERROR": "Introduzca un valor válido (1 - 365)"
+    },
+    "LAUNCHS_MENU": {
+        "NEW_LAUNCH": "Introducir nuevo lanzamiento",
+        "SEE_LAUNCHS": "Ver lanzamientos",
+        "EXIT": "Salir",
+        "REQUEST_DAYS": "Días máximos para el lanzamiento",
+        "REQUEST_DAYS_ERROR": "Introduzca un valor válido (1 - 365)",
+        "UNASSIGNED_REQUEST": "No se ha podido asignar la petición",
+        "ASSIGNED_REQUEST": "Al lanzamiento 'X' se le ha asignado la petición 'Y'"
+    },
+    "INFORMATION_HISTORY": {
+        "NEW_ROCKET": "Se ha registrado el nuevo tipo de cohete",
+        "NEW_REQUEST": "Se ha registrado la nueva petición",
+        "EXPIRED_REQUEST": "Petición caducada",
+        "REQUEST_IN_TRANSIT": "Petición en tránsito",
+        "SUCCESSFUL_REQUEST": "Petición entragada con éxito",
+        "NEW_LAUNCH": "Se ha registrado el nuevo lanzamiento",
+        "CANCEL_LAUNCH": "Lanzamiento caducado",
+        "LAUNCH_IN_TRANSIT": "Lanzamiento en tránsito",
+        "SUCCESSFUL_LAUNCH": "Lanzamiento finalizado con éxito",
+        "REQUEST_ASSIGNED_LAUNCH": "Petición asignada a lanzamiento",
+        "SHIPLOAD_COMPLETE": "Carga del lanzamiento completada",
+        "ASSIGNED": "Asignación de peticiones en lanzamientos"
+    },
+    "ADVANCED_INFORMATION_MENU": {
+        "REQUESTS": "Peticiones",
+        "LAUNCHS": "Lanzamientos",
+        "RECORD": "Historial",
+        "EXIT": "Salir",
+        "SELECTED_DAY": "Indica de que día quieres obtener los registros",
+        "SELECTED_DAY_ERROR": "Indica un día válido",
+        "NO_RECORDS": "No hay registros para este día"
+    }
+}

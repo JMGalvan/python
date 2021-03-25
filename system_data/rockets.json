@@ -1,0 +1,12 @@
+{
+    "rockets": [
+        {
+            "id": "falcon1",
+            "shipload": 670000
+        },
+        {
+            "id": "falcon9",
+            "shipload": 22800000
+        }
+    ]
+}
