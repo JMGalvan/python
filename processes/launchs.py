@@ -50,7 +50,7 @@ def openMenu() -> None:
 #   loadLaunchs: Carga la lista de lanzamientos del fichero launchs.json
 #
 def loadLaunchs() -> None:
-    setLaunchs(list(map(lambda launch: Launch(launch['id'], launch['id_rocket'], launch['max_weight'], launch['shipload'], launch['requests'], launch['time'], launch['dispatched']), files.readFile('system_data/launchs.json')['launchs'])))
+    setLaunchs(list(map(lambda launch: Launch(launch['id'], launch['id_rocket'], launch['max_weight'], launch['shipload'], launch['requests'], launch['time'], launch['dispatched']), files.readFile('system_data/data/launchs.json')['launchs'])))
 #
 #   setLaunchs: Modifica el parámetro __launchs
 #   @param requests ([Launch]): Lista de lanzamientos
@@ -118,7 +118,7 @@ def getDays() -> int:
 #   saveLaunchs: Realiza el guardado de los lanzamientos
 #
 def saveLaunchs() -> None:
-    files.writeFile('system_data/launchs.json', {
+    files.writeFile('system_data/data/launchs.json', {
         "launchs": list(map(lambda launch: launch.getLaunchData(), getLaunchs()))
     })
 

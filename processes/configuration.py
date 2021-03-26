@@ -23,7 +23,7 @@ configurationData = {}
 #   loadConfigurationData: Carga la configuración establecida en el fichero settings.json
 #
 def loadConfigurationData() -> None:
-    globals()['configurationData'] = files.readFile('system_data/settings.json')
+    globals()['configurationData'] = files.readFile('system_data/data/settings.json')
     translate.loadProperties(getLanguage())
 
 #
@@ -83,7 +83,7 @@ def getLanguage() -> str:
 #   saveConfiguration: Realiza el guardado de la configuración
 #
 def saveConfiguration() -> None:
-    files.writeFile('system_data/settings.json', globals()['configurationData'])
+    files.writeFile('system_data/data/settings.json', globals()['configurationData'])
 
 #
 #   incrementDays: Incrementa los días indicados
