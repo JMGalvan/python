@@ -32,6 +32,7 @@
         "DAYS": "Days",
         "ADVANCED_INFORMATION": "Ad information",
         "SETTING": "Setting",
+        "FILES": "Files",
         "EXIT": "Exit"
     },
     "SETTING_MENU": {
@@ -39,6 +40,15 @@
         "EXIT": "Exit",
         "REQUEST_DAYS": "Indicate the days you want to elapse (1 - 365)",
         "REQUEST_DAYS_ERROR": "Please enter a valid value (1 - 365)"
+    },
+    "FILES_MENU": {
+        "LOAD_DATA": "Load data",
+        "SAVE_DATA": "Save data",
+        "RESET_DATA": "Reset data",
+        "ALERT_MESSAGE": "Unsaved data will be lost. Are you sure you want to take this action?",
+        "YES": "Yes",
+        "NO": "No",
+        "EXIT": "Exit"
     },
     "TYPES_ROCKETS_MENU": {
         "NEW_ROCKET": "Introduce new rocket",

@@ -32,6 +32,7 @@
         "DAYS": "Días",
         "ADVANCED_INFORMATION": "Información avanzada",
         "SETTING": "Configuración",
+        "FILES": "Ficheros",
         "EXIT": "Salir"
     },
     "SETTING_MENU": {
@@ -39,6 +40,15 @@
         "EXIT": "Salir",
         "REQUEST_DAYS": "Indique los días que quiere que transcurran (1-365)",
         "REQUEST_DAYS_ERROR": "Introduzca un valor válido (1 - 365)"
+    },
+    "FILES_MENU": {
+        "LOAD_DATA": "Cargar datos",
+        "SAVE_DATA": "Guardar datos",
+        "RESET_DATA": "Resetear datos",
+        "ALERT_MESSAGE": "Los datos sin guardar se perderán. ¿Esta seguro que desea realizar esta acción?",
+        "YES": "Si",
+        "NO": "No",
+        "EXIT": "Salir"
     },
     "TYPES_ROCKETS_MENU": {
         "NEW_ROCKET": "Introducir nuevo cohete",

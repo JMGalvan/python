@@ -12,6 +12,7 @@ from processes import launchs
 from processes import station_requests
 from processes import translate
 from processes import types_rockets
+from processes import files
 
 #
 #   openMenu: Carga el menú principal
@@ -26,7 +27,8 @@ def openMenu() -> None:
         translate.getValue('MAIN_MENU.ASSIGN'),
         translate.getValue('MAIN_MENU.DAYS'),
         translate.getValue('MAIN_MENU.ADVANCED_INFORMATION'),
-        translate.getValue('MAIN_MENU.SETTING')
+        translate.getValue('MAIN_MENU.SETTING'),
+        translate.getValue('MAIN_MENU.FILES')
         ]
     common.printMenu(menuOptions)
     selectedOption = common.requestOptionInteger(0, len(menuOptions))
@@ -45,6 +47,8 @@ def openMenu() -> None:
             advanced_information.openMenu()
         elif selectedOption == 7:
             configuration.openMenu()
+        elif selectedOption == 8:
+            files.openMenu()
         openMenu()
     else:
         print(translate.getValue('COMMON.EXIT'))
