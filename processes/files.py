@@ -45,6 +45,11 @@ def readFile(routeFile: str) -> dict:
         with open(routeFile, encoding='utf-8') as file:
             return json.load(file)
     except:
+        if (routeFile == 'system_data/data/settings.json'):
+            resetData()
+            loadData('clean_data', 'system_data')
+            return readFile(routeFile)
+        
         print("Error - No such file or directory: '" + routeFile + "'")
         sys.exit()
 
@@ -89,25 +94,56 @@ def saveLocalData()  -> None:
 
 def resetLocalData() -> None:
     if securityDataMessage():
-        os.rmdir('system_data/data')
-        print('reseteo')
+        resetData()
+        loadData('clean_data', 'system_data')
+
+def resetData(src="system_data/data") -> None:
+    if os.path.exists(src):
+        files = getListDir(src)
+        for fileName in files:
+            srcAux = src + '/' + fileName
+            if os.path.isdir(srcAux):
+                resetData(srcAux)
+            else:
+                try:
+                    os.remove(srcAux)
+                except OSError:
+                    print ('- Error delete file: ' + fileName)
+        os.rmdir(src)
 
 def saveData(saveName, src="system_data/data", dst="system_data/save_files") -> None:
     dst = dst + '/' + saveName
     createDir(dst)
     lista = getListDir(src)
-    for element in lista:
-        s = src + '/' + element
-        d = dst + '/' + element
+    for fileName in lista:
+        s = src + '/' + fileName
+        d = dst + '/' + fileName
         if os.path.isdir(s):
-            saveData(element, src+ '/' + element, dst)
+            saveData(fileName, src+ '/' + fileName, dst)
         else:
             try:
                 shutil.copy2(s, d)
             except OSError:
-                print ('- Error saving file: ' + element)
+                print ('- Error saving file: ' + fileName)
             else:
-                print('- File save completed: ' + element)
+                print('- File save completed: ' + fileName)
+
+def loadData(saveName,  src="system_data/save_files", dst="system_data/data") -> None:
+    src = src + '/' + saveName
+    createDir(dst)
+    lista = getListDir(src)
+    for fileName in lista:
+        s = src + '/' + fileName
+        d = dst + '/' + fileName
+        if os.path.isdir(s):
+            saveData(fileName, src + '/' + fileName, dst)
+        else:
+            try:
+                shutil.copy2(s, d)
+            except OSError:
+                print ('- Error loading file: ' + fileName)
+            else:
+                print('- File load completed: ' + fileName)
     
 def createDir(directoryRoute: str) -> None:
     try:
