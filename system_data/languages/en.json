@@ -32,6 +32,7 @@
         "DAYS": "Days",
         "ADVANCED_INFORMATION": "Ad information",
         "SETTING": "Setting",
+        "FILES": "Files",
         "EXIT": "Exit"
     },
     "SETTING_MENU": {
@@ -39,6 +40,24 @@
         "EXIT": "Exit",
         "REQUEST_DAYS": "Indicate the days you want to elapse (1 - 365)",
         "REQUEST_DAYS_ERROR": "Please enter a valid value (1 - 365)"
+    },
+    "FILES_MENU": {
+        "LOAD_DATA": "Load data",
+        "SAVE_DATA": "Save data",
+        "RESET_DATA": "Reset data",
+        "DELETE_DATA": "Delete saved data",
+        "ALERT_MESSAGE": "Unsaved data will be lost. Are you sure you want to take this action?",
+        "LOAD_DATA_MESSAGE": "Select the data you want to load",
+        "DATA_NOT_FOUND": "No data saved",
+        "SAVE_DATA_MESSAGE": "Select in which space you want to save the data",
+        "DELETE_DATA_MESSAGE": "Select what data you want to delete",
+        "DELETE_DATA_COMPLETE": "Data deletion completed",
+        "NEW_SLOT": "New save space",
+        "SAVE_NAME": "Enter identifier for the save (3 - 14 characters)",
+        "SAVE_NAME_ERROR": "The identifier already exists or does not meet the indicated requirements",
+        "YES": "Yes",
+        "NO": "No",
+        "EXIT": "Exit"
     },
     "TYPES_ROCKETS_MENU": {
         "NEW_ROCKET": "Introduce new rocket",

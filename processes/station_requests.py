@@ -45,7 +45,7 @@ def openMenu() -> None:
 #   loadRequests: Carga la lista de peticiones a la estación del fichero requests.json
 #
 def loadRequests() -> None:
-    setRequests(list(map(lambda requests: Request(requests['id'], requests['weight'], requests['description'], requests['time_max'], requests['dispatched']), files.readFile('system_data/requests.json')['requests'])))
+    setRequests(list(map(lambda requests: Request(requests['id'], requests['weight'], requests['description'], requests['time_max'], requests['dispatched']), files.readFile('system_data/data/requests.json')['requests'])))
 
 #
 #   setRequests: Modifica el parámetro __requests
@@ -144,7 +144,7 @@ def getDays() -> int:
 #   saveRequests: Realiza el guardado de las peticiones
 #
 def saveRequests() -> None:
-    files.writeFile('system_data/requests.json', {
+    files.writeFile('system_data/data/requests.json', {
         "requests": list(map(lambda request: request.getRequestData(), getRequests()))
     })
 

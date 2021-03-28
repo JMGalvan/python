@@ -42,7 +42,7 @@ def openMenu() -> None:
 #   loadRockets: Carga la lista de cohetes del fichero rockets.json
 #
 def loadRockets() -> None:
-    setRockets(list(map(lambda rocket: Rocket(rocket['id'], rocket['shipload']), files.readFile('system_data/rockets.json')['rockets'])))
+    setRockets(list(map(lambda rocket: Rocket(rocket['id'], rocket['shipload']), files.readFile('system_data/data/rockets.json')['rockets'])))
     
 #
 #   setRockets: Modifica el parámetro __rockets
@@ -106,7 +106,7 @@ def printRocketsList() -> None:
 #   saveRockets: Realiza el guardado de los cohetes
 #
 def saveRockets() -> None:
-    files.writeFile('system_data/rockets.json', {
+    files.writeFile('system_data/data/rockets.json', {
         "rockets": list(map(lambda rocket: rocket.getRocketData(), getRockets()))
     })
 

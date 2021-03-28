@@ -79,7 +79,7 @@ def loadRecordToday() -> None:
 #   @param day (Integer): Día
 #
 def loadRecordDay(day: int) -> [Record]:
-    routeFile: str = 'system_data/records/' + str(day) + '.json'
+    routeFile: str = 'system_data/data/records/' + str(day) + '.json'
     if (files.existsFile(routeFile)):
         return files.readFile(routeFile)['records']
     else:
@@ -114,6 +114,6 @@ def addRecord(record: Record) -> None:
 #   saveRecords: Realiza el guardado de los cohetes
 #
 def saveRecords() -> None:
-    files.writeFile('system_data/records/' + str(configuration.getDay()) + '.json', {
+    files.writeFile('system_data/data/records/' + str(configuration.getDay()) + '.json', {
         "records": list(map(lambda record: record.getRecordData(), getRecords()))
     })
